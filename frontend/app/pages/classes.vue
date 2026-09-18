@@ -1,6 +1,6 @@
 <template>
-    <div class="bg-[#262D35] h-dvh w-[vw] py-[2%] px-[5%] flex flex-col justify-around gap-[10vh]">
-
+    <div class="bg-[#262D35] min-h-dvh py-[2%] px-[2vw] flex gap-[10vh]">
+        <classes-manage-bar></classes-manage-bar>
     </div>
 </template>
 
