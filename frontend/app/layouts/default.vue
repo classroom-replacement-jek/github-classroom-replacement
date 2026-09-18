@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="h-dvh w-screen">
         <slot></slot>
     </div>
 </template>
