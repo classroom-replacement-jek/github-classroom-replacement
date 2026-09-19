@@ -8,7 +8,7 @@
                     </div>
                     <h3 class="inter font-extrabold text-3xl text-white max-w-[50vw]">username</h3>
                 </div>
-            <button @click="logOut" class="rounded-full bg-[#22c9e3] shadow-sm hover:shadow-lg active:shadow-none transition-all duration-300 hover:bg-[#0cbecf] active:bg-[#07a5ad] hover:-translate-y-0.5 active:translate-y-1 ease-in-out inter font-bold text-white lg:text-2xl text-xl items-center max-h-full px-12 py-6 justify-around flex gap-4">
+            <button @click="logOut" class="rounded-full bg-[#22c9e3] shadow-lg hover:shadow-xl active:shadow-none transition-all duration-300 hover:bg-[#0cbecf] active:bg-[#07a5ad] hover:-translate-y-0.5 active:translate-y-1 ease-in-out inter font-bold text-white lg:text-2xl text-xl items-center max-h-full px-12 py-6 justify-around flex gap-4">
                 <ArrowDoorOut :size="24" />
                 Log Out</button>
             </div>
@@ -42,6 +42,6 @@ function logOut() {
 
 .fade-above-enter-active,
 .fade-above-leave-active {
-    transition: all 300ms ease-in-out
+    transition: all 600ms ease-in-out
 }
 </style>
