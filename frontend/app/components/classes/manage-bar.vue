@@ -4,13 +4,13 @@
             <div
                 class="relative flex h-[7vh]">
                 <button class="relative h-full! p-0 aspect-square rounded-full bg-[#22c9e3] shadow-sm hover:shadow-lg active:shadow-none transition-all duration-300 hover:bg-[#0cbecf] active:bg-[#07a5ad] ease-in-out inter font-bold text-white lg:text-4xl text-3xl flex justify-center items-center" @click="newClassModal = !newClassModal">
-                    <Add :size="36" class="transition-all duration-300 ease-in-out" :class="newClassModal ? '-rotate-45' : ''"></Add>
+                    <Add :size="36" :color="'white'" class="transition-all duration-300 ease-in-out" :class="newClassModal ? '-rotate-45' : ''"></Add>
                 </button>
                 <transition name="new-modal">
-                    <classes-new-modal v-if="newClassModal"></classes-new-modal>
+                    <classes-new-modal :open="newClassModal"></classes-new-modal>
                 </transition>
             </div>
-            <h3 class="text-2xl inter text-white font-extrabold">Your Classes</h3>
+            <h3 class="text-2xl inter text-white font-extrabold z-2">Your Classes</h3>
         </div>
     </transition>
 </template>
