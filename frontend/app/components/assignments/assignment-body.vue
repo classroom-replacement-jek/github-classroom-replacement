@@ -1,8 +1,12 @@
 <template>
     <transition name="fade-below">
-        <div v-if="mounted" class="bg-slate-800/60 shadow-xl w-full h-[67vh] rounded-2xl flex flex-row gap-6 overflow-x-scroll p-[2%] scrollbar-thumb-black/0">
-            <classes-course-card v-for="i in 10"></classes-course-card>
+        <div v-if="mounted && false" class="bg-slate-800/60 shadow-xl w-full h-[67vh] rounded-2xl flex flex-col gap-6 overflow-y-scroll p-[2%] scrollbar-thumb-black/0">
+            <!--boolean here is if they are a teacher-->
+            <assignments-student-submission v-for="i in 10"></assignments-student-submission>
         </div>
+        <assignments-student-view v-else-if="mounted">
+
+        </assignments-student-view>
     </transition>
 </template>
 
