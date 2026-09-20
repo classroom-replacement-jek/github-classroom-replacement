@@ -7,7 +7,7 @@
     
                     </div>
                     <h3 class="inter font-extrabold text-3xl text-white max-w-[50vw] select-none hover:text-cyan-200 active:text-cyan-400 transition-colors ease-in-out duration-300"
-                    @click="changingDisplayName = true">
+                    @click="changingDisplayName = !changingDisplayName">
                     username</h3>
                     <transition name="fade" appear mode="out-in">
                         <div  v-if="changingDisplayName" class="h-fit w-fit flex items-center gap-2">

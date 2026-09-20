@@ -4,9 +4,7 @@
             <!--boolean here is if they are a teacher-->
             <assignments-student-submission v-for="i in 10"></assignments-student-submission>
         </div>
-        <assignments-student-view v-else-if="mounted">
-
-        </assignments-student-view>
+        <assignments-student-view v-else-if="mounted"></assignments-student-view>
     </transition>
 </template>
 

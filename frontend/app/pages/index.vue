@@ -1,7 +1,7 @@
 <template>
     <div class="bg-[#262D35] min-h-dvh w-[vw] py-[2%] px-[5%] flex flex-col justify-around gap-[10vh]">
         <transition name="fade-above">
-            <h1 v-if="mounted" class="text-[#B5FFF9] lg:text-[120px] md:text-[100px] text-[75px] xl:text-[140px] font-bold inter transition-all duration-200 ease-in-out">Better Github Classroom</h1>
+            <h1 v-if="mounted" class="text-[#B5FFF9] lg:text-[120px] md:text-[100px] text-[75px] xl:text-[140px] font-extrabold inter transition-all duration-200 ease-in-out">Better Github Classroom</h1>
         </transition>
         <div class="flex flex-start gap-[10%]">
             <transition name="fade-left-a">
