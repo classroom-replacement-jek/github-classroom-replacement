@@ -12,7 +12,7 @@
                 transition-colors ease-in-out duration-300 hover:bg-sky-100 active:bg-sky-300">
                     <XCircle class="block" :size="38" color="#262D35" />
                 </div>
-                <h2 class="text-2xl inter text-[#262D35] font-extrabold">Create New Assignment</h2>
+                <h2 class="text-2xl inter text-[#262D35] font-extrabold">Edit Assignment</h2>
             </div>
             <div class="flex flex-row justify-start items-center w-full gap-4">
                 <p class="text-2xl inter text-[#262D35] font-extrabold w-[25%]">Assignment Name</p>
@@ -31,10 +31,10 @@
                 <p class="text-2xl inter text-[#262D35] font-extrabold w-[25%]">Assignment Description</p>
                 <textarea rows="5" v-model="assignmentDetails.desc" placeholder="Enter Assignment Description..." class="w-full py-2 px-4 rounded-lg bg-[#262D35]/60 focus:bg-[#262D35] focus:outline-none placeholder-cyan-300/60 transition-colors ease-in-out duration-300 text-white inter flex items-start justify-start font-bold text-lg h-full"> </textarea>
             </div>
-            <button @click="$emit('create-assignment', assignmentDetails)"
+            <button @click="$emit('edit-assignment', assignmentDetails)"
             class="rounded-full bg-[#22c9e3] shadow-lg hover:shadow-xl active:shadow-none transition-all duration-300 hover:bg-[#0cbecf] active:bg-[#07a5ad] hover:-translate-y-0.5 active:translate-y-1 ease-in-out inter font-bold text-white lg:text-2xl text-xl items-center w-[50%] py-2 justify-center flex gap-3">
                 <AddSquare :size="32" />
-                Create Assignment
+                Edit Assignment
             </button>
         </div>
     </transition>
@@ -42,7 +42,7 @@
 
 <script setup lang="ts">
 import { XCircle, AddSquare } from 'reicon-vue';
-const emit = defineEmits(['close', 'create-assignment'])
+const emit = defineEmits(['close', 'edit-assignment'])
 const mounted = ref<boolean>(false)
 onMounted(() => mounted.value = true)
 
