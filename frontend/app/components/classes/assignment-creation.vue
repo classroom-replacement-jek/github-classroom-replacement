@@ -24,7 +24,7 @@
             </div>
             <div class="flex flex-row justify-start items-center w-full gap-4">
                 <p class="text-2xl inter text-[#262D35] font-extrabold w-[25%]">Template Repository</p>
-                <input type="file" webkitdirectory multiple class="flex gap-2 w-[60%] py-2 px-4 rounded-lg bg-[#262D35]/60 focus:bg-[#262D35] focus:outline-none transition-colors ease-in-out duration-300 text-cyan-300/60 inter font-bold text-lg">
+                <input type="text" placeholder="Link to Github Repository..." class="w-[60%] py-2 px-4 rounded-lg bg-[#262D35]/60 focus:bg-[#262D35] focus:outline-none placeholder-cyan-300/60 transition-colors ease-in-out duration-300 text-white inter font-bold text-lg">
                 <!-- make sure you can convert this file upload into data we can put on the db-->
             </div>
             <div class="flex flex-col justify-start items-start w-full gap-4 h-[30%]">

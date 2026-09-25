@@ -18,7 +18,7 @@
                 </div>
                 <h3 class="text-2xl inter text-white font-extrabold z-2">APCSP Pd 6 <span class="italic">(with Teacher Name)</span></h3>
             </div>
-            <button @click="showAssignmentCreation = true" v-if="false" class="relative h-full! p-0 rounded-full bg-[#22c9e3] transition-all text-lg duration-300 hover:bg-[#0cbecf] active:bg-[#07a5ad] ease-in-out inter font-bold text-white px-4 flex justify-center items-center shadow-sm hover:shadow-lg active:shadow-none hover:-translate-y-1 active:translate-y-0.5 gap-2">
+            <button @click="showAssignmentCreation = true" v-if="true" class="relative h-full! p-0 rounded-full bg-[#22c9e3] transition-all text-lg duration-300 hover:bg-[#0cbecf] active:bg-[#07a5ad] ease-in-out inter font-bold text-white px-4 flex justify-center items-center shadow-sm hover:shadow-lg active:shadow-none hover:-translate-y-1 active:translate-y-0.5 gap-2">
                 <!--the 'true' is gonna be if the user is the teacher of the class-->
                 <AddCircle :size="32" :color="'white'"/>
                 Create New Assignment
